@@ -14,7 +14,7 @@ def regress(array):
     Find the M and B of the line that best fits an array of data structured as pairs of [x, y] points, eg: [[1, 1], [2, 2], [3, 3]]
     """
     assert array.ndim == 2
-
+    # apologies for the terrible variable names
     zxi, zyi = array.sum(axis=0)
     n = array.shape[0]
     zxiyi = np.dot(array[:, 0], array[:, 1])
